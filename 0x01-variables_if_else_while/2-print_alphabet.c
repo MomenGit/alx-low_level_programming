@@ -9,11 +9,9 @@ int main(void)
 {
 	char c = 'a';
 
-	while (c != 'Z')
+	while (c <= 'z')
 	{
 		putchar(c++);
-		if (c == 'z')
-			c = 'A';
 	}
 	putchar('\n');
 
