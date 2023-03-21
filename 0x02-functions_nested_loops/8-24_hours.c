@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * name - description
- * @para: desc
+ * jack_bauer - prints the each min of the day in the 24h format
+ * @para: no parameters
  *
- * Return: On success .
+ * Return: On success 0.
  * On error, .
  */
 void jack_bauer(void)
