@@ -3,6 +3,9 @@
 /**
  * print_sign - prints 1 for +ve no., -1 for -ve no. and 0 for 0
  * @n: input number
+ *
+ * Return: On success 1, -1 or 0.
+ * On error, .
  */
 int print_sign(int n)
 {

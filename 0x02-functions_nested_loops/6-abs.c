@@ -1,14 +1,13 @@
 #include "main.h"
 
 /**
- * name - description
- * @para: desc
- * 
- * Return: On success .
+ * _abs - returns the abs value of a number
+ * @n: input number
+ *
+ * Return: On success n.
  * On error, .
  */
-void name(void)
+int _abs(int n)
 {
-
+	return ((n < 0) ? -n : n);
 }
-
