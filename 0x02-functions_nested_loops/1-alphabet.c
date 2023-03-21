@@ -1,14 +1,16 @@
 #include "main.h"
 
 /**
- * name - description
- * @para: desc
- * 
- * Return: On success .
- * On error, .
+ * print_alphabet - prints small letters of the alphabet
+ *
  */
-void name(void)
+void print_alphabet(void)
 {
+	char i;
 
+	for (i = 'a'; i <= 'z'; i++)
+	{
+		_putchar(i);
+	}
+	_putchar('\n');
 }
-
