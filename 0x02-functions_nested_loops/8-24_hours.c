@@ -2,7 +2,6 @@
 
 /**
  * jack_bauer - prints the each min of the day in the 24h format
- * @para: no parameters
  *
  * Return: On success 0.
  * On error, .
@@ -15,9 +14,11 @@ void jack_bauer(void)
 	{
 		for (min = 0; min < 60; min++)
 		{
-			_putchar(hour);
+			_putchar(hour / 10 + 48);
+			_putchar(hour % 10 + 48);
 			_putchar(':');
-			_putchar(min);
+			_putchar(min / 10 + 48);
+			_putchar(min % 10 + 48);
 			_putchar('\n');
 		}
 	}
