@@ -1,14 +1,13 @@
 #include "main.h"
 
 /**
- * name - description
- * @para: desc
- * 
- * Return: On success .
+ * print_last_digit - returns the last digit of a number
+ * @n: input number
+ *
+ * Return: On success n % 10.
  * On error, .
  */
-void name(void)
+int print_last_digit(int n)
 {
-
+	return (n % 10);
 }
-
