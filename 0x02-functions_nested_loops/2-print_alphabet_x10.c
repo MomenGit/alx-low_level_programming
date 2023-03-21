@@ -1,14 +1,19 @@
 #include "main.h"
 
 /**
- * name - description
- * @para: desc
- * 
- * Return: On success .
- * On error, .
+ * print_alphabet_x10 - prints lower case letters 10 times
  */
-void name(void)
+void print_alphabet_x10(void)
 {
+    int j;
+    char i;
 
+    for (j = 0; j < 10; j++)
+    {
+        for (i = 'a'; i <= 'z'; i++)
+        {
+            _putchar(i);
+        }
+        _putchar('\n');
+    }
 }
-
