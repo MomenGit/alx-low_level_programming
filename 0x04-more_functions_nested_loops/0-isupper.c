@@ -1,14 +1,13 @@
 #include "main.h"
 
 /**
- * name - description
- * @para: desc
- * 
- * Return: On success .
+ * _isupper - checks whether the given character is an uppercase or not
+ * @c: input integer that resembles the character
+ *
+ * Return: On success 1.
  * On error, .
  */
 int _isupper(int c)
 {
-	return (0);
+	return ((c >= 'A' && c <= 'Z') ? 1 : 0);
 }
-
