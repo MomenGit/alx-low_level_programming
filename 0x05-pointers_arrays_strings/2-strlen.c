@@ -1,9 +1,8 @@
 /**
- * name - description
- * @para: desc
+ * _strlen - returns the length of a string
+ * @s: required string
  *
- * Return: On success .
- * On error, .
+ * Return: On success string length.
  */
 int _strlen(char *s)
 {
