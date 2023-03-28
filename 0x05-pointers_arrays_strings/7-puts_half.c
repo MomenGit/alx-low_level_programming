@@ -1,12 +1,20 @@
+#include "main.h"
+
 /**
- * name - description
- * @para: desc
- * 
- * Return: On success .
- * On error, .
+ * puts_half - print the second half of the string
+ * @str: input string
  */
-void name(void)
+void puts_half(char *str)
 {
+	int i, len;
 
+	len = 0;
+
+	while (str[len] != '\0')
+		len++;
+
+	for (i = len / 2; i < len; i++)
+		_putchar(str[i]);
+
+	_putchar('\n');
 }
-
