@@ -1,5 +1,5 @@
 /**
- * strcat - concatenates two strings
+ * _strcat - concatenates two strings
  * @dest: the string to get appended
  * @src: the string to be appended to dest
  *
@@ -8,7 +8,9 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	char *str = dest;
+	char *str;
+
+	str = dest;
 
 	while (*str != '\0')
 		str++;
