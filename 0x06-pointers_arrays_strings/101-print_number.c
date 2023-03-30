@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
- * print_number - description
+ * print_number - prints a number to the stdio
  * @n: input integer
  */
 void print_number(int n)
 {
 	int i, j;
 
-	i = 10;
 	if (n < 0)
 	{
 		_putchar('-');
 		n = -n;
 	}
 
+	i = 10;
 	while (i > 1)
 	{
 		if (n > i)
