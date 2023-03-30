@@ -2,6 +2,7 @@
  * _strncpy - copies n chars of string src to string dest
  * @dest: the destination of the copied string
  * @src: the copied string
+ * @n: number of character to copied from src
  *
  * Return: On success dest.
  * On error, .
