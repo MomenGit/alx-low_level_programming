@@ -9,7 +9,10 @@
  */
 char *_strchr(char *s, char c)
 {
-	char *first_occur;
-
-	return (first_occur);
+	while (*s != '\0')
+		if (*s == c)
+			return (s);
+		else
+			s++;
+	return ((void *)0);
 }
