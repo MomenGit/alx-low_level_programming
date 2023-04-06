@@ -1,11 +1,8 @@
 #include "main.h"
 
 /**
- * name -
- * @:
- *
- * Return: On success.
- * On error, .
+ * _puts_recursion - print a string followed by a new line
+ * @s: string to be put
  */
 void _puts_recursion(char *s)
 {
