@@ -1,8 +1,8 @@
 /**
- * name -
- * @:
+ * factorial - calculates the factorial of a given number
+ * @n: number required to get its factorial
  *
- * Return: On success.
+ * Return: On success factorial of n.
  * On error, .
  */
 int factorial(int n)
