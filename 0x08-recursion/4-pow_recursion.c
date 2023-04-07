@@ -1,6 +1,7 @@
 /**
  * _pow_recursion - calculates x to the power of y
- * @:
+ * @x: number to be raised
+ * @y: the exponent
  *
  * Return: On success the value of x raised to the power of y.
  * On error, .

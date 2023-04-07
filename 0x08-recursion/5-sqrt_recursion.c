@@ -1,6 +1,7 @@
 /**
- * _sqrt_recursion - calculates natural square root of a number
+ * sqr - calculates natural square root of a number
  * @n: number to be found its square root
+ * @root: the probable root of the number n
  *
  * Return: On success square root of n.
  * On error, .
@@ -14,6 +15,13 @@ int sqr(int n, int root)
 
 	return (root);
 }
+/**
+ * _sqrt_recursion - calculates natural square root of a number
+ * @n: number to be found its square root
+ *
+ * Return: On success square root of n.
+ * On error, .
+ */
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
