@@ -44,7 +44,7 @@ int primality(int n, int div, int sqrtn)
 int is_prime_number(int n)
 {
 	if (n < 2)
-		return 0;
+		return (0);
 
 	return (primality(n, 2, sqr(n, 0)));
 }
