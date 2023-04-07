@@ -1,10 +1,23 @@
 /**
- * name -
- * @:
+ * _sqrt_recursion - calculates natural square root of a number
+ * @n: number to be found its square root
  *
- * Return: On success.
+ * Return: On success square root of n.
  * On error, .
  */
-void name()
+int sqr(int n, int root)
 {
+	if (root * root > n)
+		return (-1);
+	else if (root * root < n)
+		root = sqr(n, ++root);
+
+	return (root);
+}
+int _sqrt_recursion(int n)
+{
+	if (n < 0)
+		return (-1);
+
+	return (sqr(n, 0));
 }
