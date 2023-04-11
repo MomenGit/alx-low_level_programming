@@ -3,7 +3,7 @@
 
 /**
  * main - Entry point
- * prints program name
+ * prints program args
  * Return: Always 0 (Success)
  */
 int main(int argc, char *argv[])
