@@ -1,8 +1,10 @@
 #include <stdlib.h>
 
 /**
- * name - description
- * @para: desc
+ * free_grid - frees a 2 dimensional grid
+ * previously created by alloc_grid function
+ * @grid: grid required to be freed
+ * @height: the height of the grid
  *
  * Return: On success .
  * On error, .
