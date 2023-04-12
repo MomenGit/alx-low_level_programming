@@ -5,7 +5,7 @@
  * @width: int number width of grid
  * @height: int number height of grid
  *
- * Return: On success pointer to created docss.
+ * Return: On success pointer to created grid.
  * On error, .
  */
 int **alloc_grid(int width, int height)
