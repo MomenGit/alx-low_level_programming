@@ -1,10 +1,11 @@
 #include <stdlib.h>
 
 /**
- * name - description
- * @para: desc
+ * str_concat - concatenates two strings
+ * @s1: first string
+ * @s2: second string
  *
- * Return: On success .
+ * Return: On success pointer to concatenated string.
  * On error, .
  */
 char *str_concat(char *s1, char *s2)
