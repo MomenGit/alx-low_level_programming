@@ -2,9 +2,12 @@
 
 /**
  * _realloc - reallocates a memory block using malloc and free
- * @ptr: desc
- * @old_size: desc
- * @new_size: desc
+ * @ptr: pointer to be reallocated
+ * @old_size: the old size of ptr
+ * @new_size: the new size to reallocated
+ *
+ * Return: On success new pointer.
+ * On error, NULL.
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
