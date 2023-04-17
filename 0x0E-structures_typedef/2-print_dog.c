@@ -8,9 +8,7 @@
  */
 void print_dog(struct dog *d)
 {
-	char *nil;
-
-	nil = "(nil)";
+	char *nil = "(nil)";
 
 	if (d->name == NULL)
 		d->name = nil;
