@@ -1,29 +1,5 @@
 #include "dog.h"
 #include <stdlib.h>
-/**
- * new_dog - ...
- *
- * @name: ...
- * @age: ...
- * @owner: ...
- * Return dog_t*
- */
-dog_t *new_dog(char *name, float age, char *owner)
-{
-	dog_t *dogy;
-	char *name_c, *owner_c;
-
-	name_c = _strdup(name);
-	owner_c = _strdup(owner);
-
-	if (name_c == NULL || owner_c == NULL)
-		return (NULL);
-	dogy->name = name_c;
-	dogy->age = age;
-	dogy = owner_c;
-
-	return (dogy);
-}
 
 /**
  * _strdup - returns a pointer to a newly allocated space in memory,
@@ -54,4 +30,32 @@ char *_strdup(char *str)
 
 	new_str[i] = str[i];
 	return (new_str);
+}
+/**
+ * new_dog - ...
+ *
+ * @name: ...
+ * @age: ...
+ * @owner: ...
+ * Return dog_t*
+ */
+dog_t *new_dog(char *name, float age, char *owner)
+{
+	char *name_c, *owner_c;
+	dog_t dogy;
+	dog_t *dogy_p;
+
+	name_c = _strdup(name);
+	owner_c = _strdup(owner);
+
+	if (name_c == NULL || owner_c == NULL)
+		return (NULL);
+
+	dogy.name = name;
+	dogy.age = age;
+	dogy.owner = owner_c;
+
+	dogy_p = &dogy;
+
+	return (dogy_p);
 }
