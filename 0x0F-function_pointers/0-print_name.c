@@ -4,6 +4,8 @@
  * print_name - prints a name
  * @name: string to be printed
  * @f: the function that specify printing type
+ *
+ * Return: Nothing.
  */
 void print_name(char *name, void (*f)(char *))
 {
