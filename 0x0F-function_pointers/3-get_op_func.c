@@ -1,14 +1,30 @@
-#include "main.h"
+#include "3-calc.h"
 
 /**
- * name - description
- * @para: desc
- * 
- * Return: On success .
+ * get_op_func - selects the correct function to perform the operation
+ * @s: the operator to be performed
+ *
+ * Return: On success pointer to the function that corresponds to the operator.
  * On error, .
  */
-void name(void)
+int (*get_op_func(char *s))(int, int)
 {
+	op_t ops[] = {
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL, NULL}};
+	int i;
 
+	i = 0;
+	while (i < 5)
+	{
+		if (*(ops[i].op) == *s)
+			return (ops[i].f);
+		i++;
+	}
+
+	return (NULL);
 }
-
