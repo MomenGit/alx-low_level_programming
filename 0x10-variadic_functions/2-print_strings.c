@@ -15,7 +15,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	char *word;
 
 	if (n == 0)
-		return (0);
+		return;
 
 	va_start(list_ptr, n);
 
