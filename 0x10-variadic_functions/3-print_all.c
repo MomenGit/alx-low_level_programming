@@ -22,23 +22,13 @@ void separate(const char *const format, int i)
  */
 void print_all(const char *const format, ...)
 {
-	int i, j, found;
-	const char *formats = "cifs";
+	int i;
 	va_list list_ptr;
 
 	va_start(list_ptr, format);
 	i = 0;
 	while (format[i] != '\0')
 	{
-		j = 0, found = 0;
-		while (formats[j] != '\0')
-			if (format[i] == format[j++])
-			{
-				found = 1;
-				break;
-			}
-		if (found == 0)
-			continue;
 		switch (format[i])
 		{
 		case 'c':
