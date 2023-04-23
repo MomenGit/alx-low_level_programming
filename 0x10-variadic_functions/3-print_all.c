@@ -9,9 +9,11 @@
 void separate(const char *const format, int i)
 {
 	if (format[i + 1] != '\0')
+	{
 		printf(", ");
-	else
-		printf("\n");
+		return;
+	}
+	printf("\n");
 }
 
 /**
@@ -46,10 +48,13 @@ void print_all(const char *const format, ...)
 			break;
 		case 's':
 			word = va_arg(list_ptr, char *);
-			if (word != NULL)
-				printf("%s", word);
-			else
+			if (word == NULL)
+			{
 				printf("%s", "(nil)");
+				separate(format, i);
+				break;
+			}
+			printf("%s", word);
 			separate(format, i);
 			break;
 		}
