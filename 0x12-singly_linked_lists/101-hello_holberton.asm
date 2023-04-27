@@ -1,12 +1,12 @@
-; File: 101-hello_holberton.asm
+; File: hello_holberton.asm
 ; Description: 64-bit assembly program that prints "Hello, Holberton" followed by a new line.
 
 extern printf
 
 section .text
-    global _start
+    global main
 
-_start:
+main:
     ; Prepare the stack for the call to printf
     push rbp
 
