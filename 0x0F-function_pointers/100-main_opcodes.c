@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - entry point
+ *
+ * @argc: ...
+ * @argv: ...
+ * Return: Always 0.
+ */
 int main(int argc, char *argv[])
 {
 	int index, bytes;
