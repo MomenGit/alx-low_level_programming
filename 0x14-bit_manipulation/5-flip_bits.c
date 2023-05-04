@@ -1,12 +1,25 @@
 #include "main.h"
 
 /**
- * get_bit - ...
- * @n: integer number to be operated on
- * @index: the index, starting from 0 of the bit you want to get
+ * flip_bits - returns the number of bits you would need
+ * to flip to get from one number to another.
+ * @n: first operand
+ * @m: second operand
  *
- * Return: ...
+ * Return: number of bits
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
+	unsigned long int bits;
+	unsigned int num;
+
+	bits = n ^ m;
+	num = 0;
+	while (bits)
+	{
+		if (bits & 1)
+			num++;
+		bits = bits >> 1;
+	}
+	return (num);
 }
