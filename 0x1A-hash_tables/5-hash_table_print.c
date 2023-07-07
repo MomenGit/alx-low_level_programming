@@ -13,7 +13,6 @@ void hash_table_print(const hash_table_t *ht)
 
 	if (ht == NULL)
 		return;
-	bucket = *ht->array;
 
 	printf("{");
 	for (i = 0, j = 0; i < ht->size; i++)
