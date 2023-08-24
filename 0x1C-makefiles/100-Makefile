@@ -4,7 +4,10 @@ OBJ = $(SRC:.c=.o)
 NAME = school
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
-all : $(OBJ) m.h
+# Prevent make from treating clean, oclean, fclean, re as file targets
+.PHONY: all clean oclean fclean re
+
+all : m.h $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
@@ -16,6 +19,3 @@ oclean:
 fclean: clean oclean
 
 re: oclean all
-
-# Prevent make from treating clean, oclean, fclean, re as file targets
-.PHONY: all clean oclean fclean re
