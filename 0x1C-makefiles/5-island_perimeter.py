@@ -33,10 +33,11 @@ def island_perimeter(grid):
     for row in range(len(grid)):
         for col in range(len(grid[0])):
             if grid[row][col] == 1:
+                perimeter += 4
                 for dir_r, dir_c in directions:
                     try:
-                        if grid[row+dir_r][col+dir_c] == 0:
-                            perimeter += 1
+                        if grid[row+dir_r][col+dir_c] == 1:
+                            perimeter -= 1
                     except Exception as exp:
                         continue
 
