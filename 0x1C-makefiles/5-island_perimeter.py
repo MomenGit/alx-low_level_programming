@@ -27,18 +27,20 @@ def island_perimeter(grid):
     if not grid:
         return 0
 
+    height = len(grid)
+    width = len(grid[0])
     perimeter = 0
     directions = [(0, 1), (0, -1), (1, 0), (-1, 0)]
 
-    for row in range(len(grid)):
-        for col in range(len(grid[0])):
+    for row in range(height):
+        for col in range(width):
             if grid[row][col] == 1:
                 perimeter += 4
                 for dir_r, dir_c in directions:
-                    try:
-                        if grid[row+dir_r][col+dir_c] == 1:
-                            perimeter -= 1
-                    except Exception as exp:
-                        continue
+                    new_row = row+dir_r
+                    new_col = col+dir_c
+                    if -1 < new_row < height and -1 < new_col < width \
+                            and grid[new_row][new_col] == 1:
+                        perimeter -= 1
 
     return perimeter
