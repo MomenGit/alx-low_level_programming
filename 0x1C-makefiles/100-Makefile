@@ -18,3 +18,6 @@ fclean: clean oclean
 re: oclean all
 
 %RM: rm -f
+
+# Prevent make from treating clean, oclean, fclean, re as file targets
+.PHONY: all clean oclean fclean re
